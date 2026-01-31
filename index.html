@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | MyCompany</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="MyCompany Logo">
+    </a>
+  </div>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="profile.html">Our Profile</a></li>
+    <li><a href="#message">Message Us</a></li>
+  </ul>
+</nav>
+
+
+<main>
+  <!-- HERO -->
+  <section class="hero section">
+    <div class="container">
+      <h1 id="greeting">Hi Guest, Welcome To Website</h1>
+      <p class="hero-desc">
+        We help businesses grow through modern and reliable digital solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Who We Are</h2>
+      <p class="section-desc">
+        MyCompany is a technology-driven company focused on building
+        high-quality digital products that solve real business problems.
+      </p>
+    </div>
+  </section>
+
+  <!-- HEADQUARTER -->
+  <section class="section alt">
+  <div class="container">
+    <h2 class="section-title">Our Headquarter</h2>
+
+    <div class="hq-list">
+      <div class="hq-card">
+        <img src="assets/jakarta.jpg" alt="Jakarta">
+        <div class="hq-name">Jakarta</div>
+      </div>
+
+      <div class="hq-card">
+        <img src="assets/bandung.jpg" alt="Bandung">
+        <div class="hq-name">Bandung</div>
+      </div>
+
+      <div class="hq-card">
+        <img src="assets/surabaya.jpg" alt="Surabaya">
+        <div class="hq-name">Surabaya</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- MESSAGE US -->
+  <section id="message" class="section">
+    <div class="container">
+      <h2 class="section-title">Message Us</h2>
+      <p class="section-desc">
+        Have a question or want to work with us? Leave your message below.
+      </p>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="tel" id="phone" placeholder="Phone Number" />
+        <textarea id="messageText" placeholder="Message"></textarea>
+        <button type="submit">Submit Message</button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+  </section>
+</main>
+
+<!-- POPUP GREETING -->
+<div id="greetingModal" class="modal">
+  <div class="modal-content">
+    <h2>Welcome 👋</h2>
+    <p>Please enter your name (optional)</p>
+    <input type="text" id="popupName" placeholder="Your name" />
+    <button onclick="submitGreeting()">Continue</button>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-content">
+    <p>© 2026 MyCompany. All rights reserved.</p>
+    <p class="footer-tagline">Innovative Digital Solutions</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
